@@ -19,7 +19,7 @@ export class Meeting {
   location: string;
 
   @Prop({ type: [{ type: Types.ObjectId, ref: 'User' }], default: [] })
-  participants: Types.ObjectId[]; // Liste des IDs des participants
+  participants: Types.ObjectId[]; // Liste des IDs des participantsje veux ca dans un tr 
 }
 
 export const MeetingSchema = SchemaFactory.createForClass(Meeting);

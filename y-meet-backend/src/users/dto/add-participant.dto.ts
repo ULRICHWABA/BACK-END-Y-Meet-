@@ -1,6 +1,12 @@
-import { IsMongoId } from 'class-validator';
+import { IsString, IsNumber } from 'class-validator';
 
 export class AddParticipantDto {
-  @IsMongoId()
+  @IsString()
   userId: string;
+
+  @IsNumber()
+  latitude: number;
+
+  @IsNumber()
+  longitude: number;
 }
